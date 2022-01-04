@@ -1,5 +1,20 @@
 <html>
   <head>
+    
+    <script>
+      
+      var card = document.querySelector(".card");
+      card.addEventListener("click", onClickFlip, {
+        once: false
+      });
+
+      function onClickFlip() {
+        card.classList.toggle("is-flipped");
+        //document.getElementById("page").innerHTML += "clicked<br>";
+      }
+
+      
+    </script>
   
   </head>
   
