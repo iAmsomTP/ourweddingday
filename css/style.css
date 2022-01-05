@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  /* color: #828282; */
   background: #fff;
 }
 
@@ -42,7 +42,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 101;
-  background: rgba(0, 0, 0, 0.7);
+  /*background: rgba(0, 0, 0, 0.7);*/
   content: "";
 }
 
@@ -107,7 +107,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #fff;
+  /*color: #fff;*/
+  background: -webkit-linear-gradient(#800020, #000033);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -309,7 +312,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -836,7 +839,10 @@ form label {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  /*color: #800020;*/
+  background: -webkit-linear-gradient(#800020, #000033);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
