@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+	
+	<script type="text/javascript">
+		window.onload = function () {
+    document.getElementById('button').onclick = function () {
+        document.getElementById('modal').style.display = "none"
+    };
+};
+	
+	</script>
+	
+	<style>
+	
+		#popmodal {
+			/*position: fixed;*/
+			font-family: Arial, Helvetica, sans-serif;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.8);
+			z-index: 99999;
+			height: 100%;
+			width: 100%;
+		}
+		.popmodalconent {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #fff;
+			width: 80%;
+			padding: 20px;
+		}
+			
+	</style>
+	
+	</head>
+	
+	<body>
+	
+		<div id="popmodal">
+		<div class="popmodalconent">
+			 <h1>แจ้งเพื่อทราบ</h1>
+
+			<p>
+			
+			-- :: เนื่องจากสถานการณ์โควิดในช่วงนี้กำหนดการอาจมีการปรับเปลี่ยนตามมาตรการของภาครัฐ :: --<br/>
+			
+			<u>มาตรการเข้าร่วมงาน </u> <br/>
+			1. ลงทะเบียนก่อนเข้าและก่อนออกจากสถานที่ ในสมุดสำหรับลงทะเบียน
+			2. ให้ผู้ร่วมตรวจ ATK ก่อนมาร่วมงานโดยมีผลเป็นลบ "ไม่เกิน 12 ชั่วโมง" หรือแบบ RT-PCR "ไม่เกิน 48 ชั่วโมง" ก่อนวันงาน  แล้วนำผลที่เป็นลบมาแสดงหน้างาน  <br/>
+			3. หากผู้ร่วมงานรู้ตัวว่ามีความเสี่ยงโปรดแจ้งให้ทราบล่วงหน้าว่าไม่สามารถมาร่วมงานได้ <br/>
+			4. ผู้ร่วมงานต้องฉีดวัคซีนมาแล้วอย่างน้อย 2 เข็ม <br/>
+			5. ผู้เข้าร่วมงานต้องสวมหน้ากากอนามัยตลอดเวลาที่อยู่ในงาน <br/>
+			6. ล้างมือด้วยสบู่และน้ำหรือแอลกอฮอล์บ่อย ๆ หรือทุกครั้งที่สัมผัสสิ่งของ/วัตถุที่ใช้ร่วมกัน <br/>
+			7. งดบริโภคเครื่องดื่มที่มีแอลกอฮอล์ทุกกรณี<br/>
+			8. ประเมินอาการหลังเข้าร่วมงานอย่างน้อย 14 วัน <br/>
+			9. ปฏิบัติตามกฎระเบียบสถานที่อย่างเคร่งครัด
+			
+			
+			<br/>
+			<span style="color:red;">* ทางงานขออนุญาตจำกัดจำนวนผู้ร่วมงานเพื่อลดความแออัดภายในงาน</span>
+			
+			<br/>
+			<br/>
+			
+			</p>
+			<button id="popbutton">Close</button>
+		</div>
+	</div>
+		
+	</body>
+	
+</html>
