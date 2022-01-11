@@ -10,23 +10,27 @@
 * 	Template Style 
 *
 * ======================================================= */
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   /* color: #828282; */
-  background: #fff;
+  background: #fafafa; 
+
 }
 
 #page {
   position: relative;
   overflow-x: hidden;
-  width: 100%;
+  width: 90%;
   height: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  margin: auto;
+  border: 5px solid red;
 }
 .offcanvas #page {
   overflow: hidden;
@@ -1905,45 +1909,6 @@ form label {
 
 
 /* modal */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 
 /* card */
 
@@ -1992,3 +1957,70 @@ form label {
   margin:0;
   padding:0;
   }
+  
+  /* -- POPUP Covid*/
+  
+ #puoverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	z-index: 100;
+	display: none;
+}
+.cnt223 a{
+	text-decoration: none;
+}
+.pupopup{
+	width: 90%;
+	margin: 0 auto;
+	display: none;
+	position: fixed;
+	z-index: 101;
+}
+.cnt223{
+	min-width: 90%;
+	width: 90%;
+	min-height: 90%;
+	margin: 10px auto;
+	background: #f3f3f3;
+	position: relative;
+	z-index: 103;
+	padding: 15px 35px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #000;
+}
+.cnt223 h1{
+	clear: both;
+	color: #555555;
+	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	font-weight: 800;
+}
+.cnt223 p{
+	clear: both;
+	color: #555555;
+	/* text-align: justify; */
+	font-size: 20px;
+	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+.cnt223 p a{
+	color: brown;
+	font-weight: bold;
+}
+.cnt223 .x{
+	float: right;
+	height: 35px;
+	left: 22px;
+	position: relative;
+	top: -25px;
+	width: 34px;
+}
+.cnt223 .x:hover{
+	cursor: pointer;
+}
