@@ -30,7 +30,16 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
   margin: auto;
-  border: 5px solid red;
+  
+  /*border: 5px solid red;*/
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #800022, lightgray,
+      #000033
+    ) 1 100%;
 }
 .offcanvas #page {
   overflow: hidden;
@@ -1961,7 +1970,8 @@ form label {
   /* -- POPUP Covid*/
   
  #puoverlay {
-	position: absolute;
+	position: fixed;
+	/*position: absolute;*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1978,11 +1988,13 @@ form label {
 	text-decoration: none;
 }
 .pupopup{
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	display: none;
+	/*position: fixed;*/
 	position: absolute;
 	z-index: 101;
+	font-weight: 800;
 }
 .cnt223{
 	min-width: 90%;
@@ -1990,7 +2002,7 @@ form label {
 	min-height: 90%;
 	margin: 10px auto;
 	background: #f3f3f3;
-	position: absolute;
+	position: relative;
 	z-index: 103;
 	padding: 15px 35px;
 	border-radius: 5px;
@@ -2024,3 +2036,4 @@ form label {
 .cnt223 .x:hover{
 	cursor: pointer;
 }
+
