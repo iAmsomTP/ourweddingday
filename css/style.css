@@ -1981,7 +1981,7 @@ form label {
 	width: 90%;
 	margin: 0 auto;
 	display: none;
-	position: fixed;
+	position: absolute;
 	z-index: 101;
 }
 .cnt223{
