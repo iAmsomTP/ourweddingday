@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   /* color: #828282; */
+  color: #ffffff;
   background: #fafafa; 
 
 }
@@ -32,14 +33,20 @@ body {
   margin: auto;
   
   /*border: 5px solid red;*/
-  border-width: 3px;
+  /* border-width: 3px;
   border-style: solid;
   border-image: 
     linear-gradient(
       to bottom, 
       #800022, lightgray,
       #000033
-    ) 1 100%;
+    ) 1 100%; */
+
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+
+  background: rgb(128,0,34);
+  background: linear-gradient(190deg, rgba(128,0,34,1) 0%, rgba(0,0,51,1) 100%);
 }
 .offcanvas #page {
   overflow: hidden;
@@ -388,7 +395,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #000000;
+  color: #ffffff;
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
@@ -444,7 +451,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
-  color: #000000;
+  color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   display: block;
   padding-bottom: 20px;
@@ -458,13 +465,15 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap span {
   display: block;
   /* color: rgba(255, 255, 255, 0.8); */
-  color:#000000;
+  color:#ffffff;
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
-  color: black;
+  color: white;
   font-size: 20px;
 }
+
+
 #fh5co-counter .event-wrap .event-col,
 #fh5co-event .event-wrap .event-col {
   width: 50%;
@@ -485,9 +494,11 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-weight: 800;
   font-size: 28px;
-  background: -webkit-linear-gradient(#800020, #000033);
+  /* background: -webkit-linear-gradient(#800020, #000033); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
+
+  color: #FFFFFF;
 }
 
 .timeline {
@@ -872,7 +883,8 @@ form label {
   margin: 0;
   padding: 0;
   /*color: #800020;*/
-  background: -webkit-linear-gradient(#800020, #000033);
+  /* background: -webkit-linear-gradient(#800020, #000033); */
+  background: -webkit-linear-gradient(#ffffff, #b8b8b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1233,7 +1245,8 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #ffffff;
+  /* color: #828282; */
 }
 .fh5co-heading span {
   text-transform: uppercase;
@@ -1886,6 +1899,7 @@ form label {
   font-size: 20px;
   font-weight: 800;
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  color: #ffffff;
 }
 
 .txtnew{
@@ -1896,7 +1910,7 @@ form label {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #FFFFFF;
   font-weight: 700;
 }
 
@@ -1906,6 +1920,7 @@ form label {
   background-color: #800020;
   border-radius: 50%;
   display: inline-block;
+  border:2px solid white;  
 }
 
 .dotn {
@@ -1914,6 +1929,7 @@ form label {
   background-color: #000033;
   border-radius: 50%;
   display: inline-block;
+  border:2px solid white;  
 }
 
 
@@ -2037,3 +2053,35 @@ form label {
 	cursor: pointer;
 }
 
+/* +++ */
+
+#popmodal {
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 100;
+	height: 90%;
+	width: 100%;
+}
+.popmodalconent {
+	/*position: absolute;*/
+	top: 50%;
+	left: 50%;
+	/*transform: translate(-50%, -50%);*/
+	background: #fff;
+	width: 100%;
+	padding: 20px;
+	
+	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	font-size: 20px;
+}
+
+/* --- */
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+}
