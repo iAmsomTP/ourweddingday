@@ -2104,7 +2104,7 @@ hr.style-two {
 }
 #countdown li {
   margin: 0 -3px 0 0;
-  padding: 0;
+  padding: 2%;
   display: inline-block;
   /*width: 25%;*/
   font-size: 38px;
