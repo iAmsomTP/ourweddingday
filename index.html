@@ -85,6 +85,16 @@
 								return false;
 							});
 
+			$("body").click(function(e){
+				if(e.target.id != "pupopup")
+				{
+					$(".pupopup").hide();
+					$(".puoverlay").hide();
+					puoverlay.appendTo(document.body).remove();
+					$("body").unbind("click");
+				}
+			});
+
 
 			$('.x').click(function(){
 							$('.pupopup').hide();
@@ -92,8 +102,36 @@
 							return false;
 						});
 		});
+
 	</script>
 	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+	
+	
+	<script type="text/javascript">
+		// window.onload = function () {
+		// 		document.getElementById('popbutton').onclick = function () {
+		// 		document.getElementById('popmodal').style.display = "none"
+		// 	};
+		// };
+
+	
+	</script>
+
+	<!-- popup card -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(".fancybox").fancybox({
+			openEffect: "none",
+			closeEffect: "none"
+		});
+	</script>
+
 
 	</head>
 
@@ -106,7 +144,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	
+
 	
 	<div class='pupopup' >
 		<div class='cnt223'>
@@ -135,9 +173,7 @@
 		</p>
 		</div>
 	</div>
-	
-	
-	
+
 
 	<nav class="fh5co-nav" role="navigation" style="display:none;">
 		<div class="container">
@@ -160,7 +196,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 
-							<img src="img/LOGO.png" width="30%">
+							<img src="img/Logo2.png" width="30%">
 
 							<!-- <h1>Tanaporn &amp; Exkasit</h1> -->
 							<h2>We Are Getting Married</h2>
@@ -187,25 +223,35 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-md-12 txtnew text-center" style="padding-bottom: 5%;">
-
-					<audio controls autoplay>
-						<source src="AThousandYears.mp3" type="audio/mpeg">
-					</audio>
-					
-					<br/><br/>
-
-					<img src="img/envelope-01.png" width="150" height="75">
+				<div class="col-md-12 text-center" >
+					เปิดการ์ด
 				</div>
 			</div>
 
 			<div class="row">
+				<div class="col-md-12 txtnew text-center" >
+
+					<a class="fancybox" rel="ligthbox" href="img/F5.png">
+						<img src="img/envelope-01.png" width="150" height="75">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 text-center" style="padding-bottom: 5%;" >
+					หรืออ่านข้อความด้านล่าง
+				</div>
+			</div>
+			
+			<hr class="style-two">
+
+			<div class="row" style="padding-top: 5%;">
 				<div class="col-md-12 txtnew text-center ">
 					<b style="font-size: 20px;">20 กุมภาพันธ์ 2565</b>
 					<br><br>
 					<p>ขอเรียนเชิญมาร่วมฉลองงานแต่งงานของเรา</p>
 					<br/>
-					<p id="gbname">ธนาภรณ์ แป้นเกิด (ส้ม) <br/>❤<br/> เอกสิทธิ์ เพ็ญภินันท์ (โฟกัส)</p>
+					<p id="gbname">ธนาภรณ์ แป้นเกิด (ส้ม) <br/> ❤ <br/> เอกสิทธิ์ เพ็ญภินันท์ (โฟกัส)</p>
 				</div>
 			</div>
 
@@ -229,7 +275,7 @@
 						<div class="event-wrap animate-box">
 							<h3>พิธีหลั่งน้ำพระพุทธมนต์</h3>
 							<div class="event-col">
-								<img src="img/conch.png" width="40%">
+								<img src="img/conch2.png" width="40%">
 							</div>
 							<div class="event-col" style="padding-top: 1em;">
 								<i class="icon-clock"></i>
@@ -243,7 +289,7 @@
 						<div class="event-wrap animate-box">
 							<h3>ร่วมรับประทานอาหาร</h3>
 							<div class="event-col">
-								<img src="img/food.png" width="40%">
+								<img src="img/food2.png" width="40%">
 							</div>
 							<div class="event-col" style="padding-top: 1em;">
 								<i class="icon-clock"></i>
@@ -256,10 +302,12 @@
 			
 		</div>
 
+		<br/><br/>
+
 		<div class="row">
 			<div class="col-md-12 txtnew text-center ">
 				<div class="txtmaps">
-					THEME
+					<b>THEME</b>
 					<br/><br/>
 					Burgundy and Navy Blue
 				</div> 
@@ -280,12 +328,23 @@
 
 					<br/>
 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.5812312218163!2d100.4173187884423!3d13.683209193771534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bc2d6f4d88bb%3A0x715a3ae521be2853!2z4Lit4Li04LmI4Lih4Lib4Lil4Liy4LmA4Lic4LiyIOC4geC4seC4peC4m-C4nuC4pOC4geC4qeC5jA!5e0!3m2!1sth!2sth!4v1641460566651!5m2!1sth!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.5812312218163!2d100.4173187884423!3d13.683209193771534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bc2d6f4d88bb%3A0x715a3ae521be2853!2z4Lit4Li04LmI4Lih4Lib4Lil4Liy4LmA4Lic4LiyIOC4geC4seC4peC4m-C4nuC4pOC4geC4qeC5jA!5e0!3m2!1sth!2sth!4v1641460566651!5m2!1sth!2sth" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 
 			</div>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<audio controls autoplay>
+						<source src="AThousandYears.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	
+	
 
 	
 	</div>
